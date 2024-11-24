@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manometro</title>
+</head>
+<body>
+    <head id="head-screen">
+        <img id="head-screen-img-1" onclick="setScreen('valveScreen.html')" src="img/circulo-de-flecha-izquierda.png" alt="Ir a atras">
+        <img id="head-screen-img-2" src="img/manometro.png" alt="Patrones">
+        <img id="head-screen-img-3" onclick="setScreen('certificateScreen.html')" src="img/circulo-de-flecha-derecha.png" alt="Ir al siguiente">
+    </head>
+    <section id="container-main-technical">
+        <form method="post">
+            <h2 id="form-subtitle">MANOMETRO</h2>
+            <label></label>
+            <label>RANGO DE MEDICION:</label>
+            <input class="form-input-measurement-range-pressure" type="text" id="form-input-text" name="fname"><br>
+            <label>PRECISION:</label>
+            <input class="form-input-precision-pressure" type="text" id="form-input-text" name="fname"><br>
+            <label>TIPO DE ESCALA:</label>
+            <input class="form-input-scale-type-pressure" type="text" id="form-input-text" name="fname"><br>
+            <input id="form-input-button" type="button" value="ENVIAR" onclick="setPressure()">
+        </form>
+    </section>
+</body>
+</html>

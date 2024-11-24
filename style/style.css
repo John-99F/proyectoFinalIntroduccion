@@ -1,0 +1,239 @@
+:root {
+    ---font-color: white;
+    ---background-img: url("../img/background.jpg");
+    ---background-containter-main: #0000004D;
+}
+
+/*Style principal Screen*/
+body {
+    background-image: var(---background-img);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#container-main-img {
+    width: 70%;
+    height: 60%;
+    color: var(---font-color);
+}
+
+#container-header {
+    text-align: center;
+}
+
+#container-header-title {
+    color: var(---font-color);
+}
+
+#container-header-subtitle {
+    color: var(---font-color);
+}
+
+#container-main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 50%;
+    margin-left: 25%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    border-radius: 10%;
+    background-color: var(---background-containter-main);
+
+}
+
+#container-main-button-nav {
+    font-size: 20px;
+    padding: 10%;
+    margin-left: 10%;
+    margin-right: 20%;
+    text-align: center;
+    color: var(---font-color);
+}
+
+#footer-screen {
+    margin-left: 45%;
+}
+
+#footer-screen-img {
+    width: 3%;
+    height: 5%;
+    margin: 2%;
+}
+
+p {
+    color: var(---font-color);
+    font-size: 20px;
+    margin-left: -5%;
+}
+/*Style forms*/
+#container-main-technical {
+    max-width: 400px;
+    width: 100%;
+}
+
+#head-screen {
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+}
+
+#head-screen-img-3 {
+    width: 50%;
+}
+
+#head-screen-img-2 {
+    width: 50%;
+    margin-left: -15%;
+}
+
+
+#head-screen-img-1 {
+    width: 25%;
+    margin-left: 35%;
+}
+
+form {
+    width: 100%;
+    margin-left: 50%;
+}
+
+/* Título del formulario */
+#form-subtitle {
+    text-align: center;
+    margin-left: 10%;
+    color: var(---font-color);
+}
+
+/* Etiquetas y campos de entrada */
+label {
+    font-weight: bold;
+    color: var(---font-color);
+    margin-top: 10px;
+    display: block;
+}
+
+#form-input-text,
+#form-input-date {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: var(---font-color);
+    background: none;
+    font-size: 16px;
+}
+
+#form-input-text:focus,
+#form-input-date:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Botón de envío */
+#form-input-button {
+    width: 100%;
+    padding: 10px;
+    margin-left: 3%;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#form-input-button:hover {
+    background-color: #0056b3;
+}
+
+
+@media (min-width: 1500px) and (max-width: 1979px) {
+    #container-main {
+        width: 40%;
+        margin: 0 auto;
+        /* Cambia a dos columnas en tablet */
+    }
+
+    #container-main-img {
+        width: 70%;
+    }
+
+    #head-screen {
+        width: 50%;
+        height: 100%;
+        padding: 1%;
+    }
+
+    #head-screen-img-3 {
+        width: 40%;
+    }
+
+    #head-screen-img-2 {
+        width: 60%;
+        margin-left: -30%;
+    }
+
+
+    #head-screen-img-1 {
+        width: 20%;
+        margin-left: 35%;
+    }
+
+    #container-main-technical {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+        margin-left: 48%;
+        margin-top: 10%;
+    }
+
+    /* Título del formulario */
+    #form-subtitle {
+        text-align: center;
+        margin-left: 10%;
+        color: var(---font-color);
+    }
+
+    /* Etiquetas y campos de entrada */
+    label {
+        font-weight: bold;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    #form-input-text,
+    #form-input-date {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        font-size: 25px;
+    }
+
+    #form-input-button {
+        margin-left: 3%;
+        font-size: 20px;
+    }
+
+    #container-header-title,
+    #container-header-subtitle {
+        font-size: 2rem;
+        /* Ajusta el tamaño de fuente */
+    }
+
+    #container-main-button-nav {
+        font-size: 18px;
+        padding: 5%;
+    }
+
+    #footer-screen {
+        margin-left: 43%;
+    }
+}

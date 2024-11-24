@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valvula</title>
+</head>
+<body>
+    <head id="head-screen">
+        <img id="head-screen-img-1" onclick="setScreen('patternsScreen.html')" src="img/circulo-de-flecha-izquierda.png" alt="Ir a atras">
+        <img id="head-screen-img-2" src="img/valvula.png" alt="Patrones">
+        <img id="head-screen-img-3" onclick="setScreen('pressureGauge.html')" src="img/circulo-de-flecha-derecha.png" alt="Ir al siguiente">
+    </head>
+    <section id="container-main-technical">
+        <form method="post">
+            <h2 id="form-subtitle">VALVULA</h2>
+            <label></label>
+            <label>TIPO:</label>
+            <input  class="form-input-type-valve" type="text" id="form-input-text" name="fname"><br>
+            <label>RANGO DE PRESION:</label>
+            <input class="form-input-pressure-range-valve"  type="text" id="form-input-text" name="fname"><br>
+            <label>RANGO DE TEMPERATURA:</label>
+            <input  class="form-input-temperature-range-valve" type="text" id="form-input-text" name="fname"><br>
+            <input id="form-input-button" type="button" value="ENVIAR" onclick="setValve()">
+        </form>
+    </section>
+</body>
+</html>

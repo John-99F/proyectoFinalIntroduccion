@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnico</title>
+</head>
+
+<body>
+    <head id="head-screen">
+        <a  href="index.html"><img  id="head-screen-img-1" src="img/circulo-de-flecha-izquierda.png" alt="Ir a atras"></a>
+        <img id="head-screen-img-2" src="img/technical-service.png" alt="Tecnico"> 
+        <img id="head-screen-img-3" onclick="setScreen('environmentalConditionsScreen.html')" src="img/circulo-de-flecha-derecha.png" alt="Ir al siguiente">
+    </head>
+    <section id="container-main-technical">
+        <form method="post">
+            <h2 id="form-subtitle">TECNICO</h2>
+            <label></label>
+            <label>NOMBRE:</label>
+            <input class="form-input-name-technical" type="text" id="form-input-text" name="fname"><br>
+            <label>FECHA:</label>
+            <input class="form-input-date-technical" type="date" id="form-input-date" name="fname"><br>
+            <label>LUGAR:</label>
+            <input class="form-input-place-technical" type="text" id="form-input-text" name="fname"><br>
+            <input class="form-button-send-technical" id="form-input-button" type="button" value="ENVIAR" onclick="setFormTechnical()">
+        </form>
+    </section>
+</body>
+
+</html>
